@@ -1,0 +1,20 @@
+# =====================================================================
+# robots.txt — WISEINN
+# ---------------------------------------------------------------------
+# TODO (before go-live): replace the placeholder domain below with the
+# confirmed production domain. The Sitemap URL must be an absolute,
+# publicly reachable HTTPS URL.
+#
+# Policy:
+#   - All public pages are crawlable.
+#   - CSS, JS and image assets are deliberately NOT blocked — search
+#     engines need them to render and evaluate the pages correctly.
+#   - 404.html is not disallowed here; it carries its own "noindex"
+#     meta tag, which requires the page to be crawlable to be seen.
+# =====================================================================
+
+User-agent: *
+Allow: /
+
+# Site map (update domain once confirmed)
+Sitemap: https://www.wiseinn.co.za/sitemap.xml

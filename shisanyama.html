@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- =====================================================================
+    SHISANYAMA.HTML — WISEINN Grilladin (Division 03)
+    Images used (styled fallbacks render automatically if missing):
+      assets/images/shisanyama/grilladin-hero.jpg
+      assets/images/shisanyama/grilladin-promo.jpg
+      assets/images/gallery/grilladin-01.jpg … grilladin-06.jpg
+
+    CLIENT PENDING:
+      1. Physical address (needed for verified map pin, directions + schema)
+      2. Final menu (items, descriptions, prices)
+      3. Confirmed opening hours
+    TODO: replace https://www.wiseinn.co.za with the real production domain.
+  ====================================================================== -->
+
+  <title>WISEINN Grilladin — Braai &amp; Shisanyama Experience | Opening Soon</title>
+  <meta name="description" content="WISEINN Grilladin is the WISEINN shisanyama destination — braai, food, music and good company. Opening this Friday. Menu and location details coming soon.">
+  <link rel="canonical" href="https://www.wiseinn.co.za/shisanyama.html">
+  <meta name="theme-color" content="#101013">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WISEINN">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="WISEINN Grilladin — Come for the Braai. Stay for the Feeling.">
+  <meta property="og:description" content="Braai, food, music and good company. The WISEINN Grilladin opens this Friday — menu and directions coming soon.">
+  <meta property="og:url" content="https://www.wiseinn.co.za/shisanyama.html">
+  <!-- TODO: supply a 1200×630 share image -->
+  <meta property="og:image" content="https://www.wiseinn.co.za/assets/images/shisanyama/grilladin-share.jpg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WISEINN Grilladin — Opening This Friday">
+  <meta name="twitter:description" content="The WISEINN shisanyama destination — braai, food, music and good company.">
+  <meta name="twitter:image" content="https://www.wiseinn.co.za/assets/images/shisanyama/grilladin-share.jpg">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data: breadcrumbs only for now.
+       TODO: add Restaurant JSON-LD (name, address, hours, cuisine) only AFTER
+       the client confirms the physical address and opening hours.
+       No invented location, ratings or reviews are published. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.wiseinn.co.za/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.wiseinn.co.za/services.html" },
+      { "@type": "ListItem", "position": 3, "name": "WISEINN Grilladin", "item": "https://www.wiseinn.co.za/shisanyama.html" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ Inline icon sprite (shared + Grilladin set) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5.7s.8 2.6.8 4.7c0 2-1.4 3.6-3.4 3.6-2 0-3.6-1.6-3.6-3.6 0-.5.1-1.1.3-1.6C4.8 5.5 3 8.6 3 12.1 3 17 7 21 12 21s9-4 9-8.9C21 6.9 16.6 2.6 13.5.7zM12 19c-1.7 0-3-1.3-3-3 0-1.6 1-2.7 3-4 2 1.3 3 2.4 3 4 0 1.7-1.3 3-3 3z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.5.8 3.1 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm6.1 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.1-.9-3.5-1.4-5.7-5-5.9-5.2-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.8z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.5-1.5h1.4V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.3c2.5 0 2.8 0 3.8.1 2.5.1 3.7 1.3 3.8 3.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.5-1.3 3.7-3.8 3.8-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.7-1.3-3.8-3.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.3 5.7 5.5 4.5 8 4.4c1-.1 1.3-.1 4-.1zM12 2C9.3 2 9 2 7.9 2.1 4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8C9 22 9.3 22 12 22s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 4.9a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.3-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M19.6 7.2a5 5 0 0 1-3.6-1.6v7.9a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v2.9a2.8 2.8 0 1 0 1.9 2.7V2h2.8a5 5 0 0 0 3.6 4.3v2.9z"/></symbol>
+  </svg>
+
+  <!-- ========================= SHARED HEADER ========================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg nav-wi wrap" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="WISEINN home">
+        <!-- TODO: replace with assets/images/logos/wiseinn-logo.png when confirmed -->
+        <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-4 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="landscaping.html">Landscaping</a></li>
+          <li class="nav-item"><a class="nav-link" href="maintenance.html">SEEFAKO Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="shisanyama.html">Grilladin</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn-wi btn-wi--ember btn-wi--sm nav-cta" href="#menu">View Menu</a>
+      </div>
+    </nav>
+  </header>
+  <!-- ======================= END SHARED HEADER ======================= -->
+
+  <main id="main">
+
+    <!-- ========================= HERO ========================= -->
+    <section class="hero acc-ember" aria-labelledby="page-title">
+      <div class="hero__media" aria-hidden="true">
+        <!-- TODO: confirm filename; braai/food photography preferred -->
+        <img src="assets/images/shisanyama/grilladin-hero.jpg" alt="" fetchpriority="high"
+             onerror="this.hidden=true">
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__body">
+        <div class="wrap">
+          <span class="badge-opening reveal">
+            <svg aria-hidden="true"><use href="#i-flame"/></svg> Opening This Friday
+          </span>
+          <h1 class="hero__title reveal" id="page-title" style="--d:90ms">
+            Come for the Braai. <em style="color:var(--ember)">Stay for the Feeling.</em>
+          </h1>
+          <p class="hero__lead reveal" style="--d:160ms">
+            WISEINN Grilladin — our shisanyama home. Real fire, honest food, music and the
+            kind of company that keeps you at the table longer.
+          </p>
+          <div class="hero__cta reveal" style="--d:240ms">
+            <a class="btn-wi btn-wi--ember" href="#menu">
+              View Menu <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn-wi btn-wi--ghost" href="#visit">
+              <svg aria-hidden="true"><use href="#i-pin"/></svg> Get Directions
+            </a>
+            <a class="btn-wi btn-wi--ghost" data-whatsapp-link href="#" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= MENU ========================= -->
+    <section class="section acc-ember" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">The Menu</p>
+        <h2 class="sec-title reveal" id="menu-title">The Menu Is on the Fire</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          We're putting the finishing touches on the Grilladin menu. It lands here before
+          opening — no guesswork, just the real thing.
+        </p>
+
+        <!-- DRAFT STATE: placeholder categories only.
+             NO invented items, prices or dietary claims are published.
+             Once the client sends the menu, replace this panel with
+             .menu-cat / .menu-item blocks (names, descriptions, prices). -->
+        <div class="menu-pending reveal" style="--d:140ms; margin-top:2rem">
+          <div class="menu-pending__head">
+            <svg aria-hidden="true"><use href="#i-flame"/></svg>
+            Menu publishing soon — draft categories shown below
+          </div>
+          <p>
+            The categories below are a preview of the menu layout, not the final offering.
+            Items, descriptions, prices and dietary information will be added only after the
+            client confirms them.
+          </p>
+          <ul class="menu-draft">
+            <li><span class="name">Braai &amp; Grills</span><span class="status">Coming soon</span></li>
+            <li><span class="name">Mains</span><span class="status">Coming soon</span></li>
+            <li><span class="name">Sides &amp; Salads</span><span class="status">Coming soon</span></li>
+            <li><span class="name">Drinks</span><span class="status">Coming soon</span></li>
+          </ul>
+          <div class="hero__cta" style="margin-top:1.5rem">
+            <a class="btn-wi btn-wi--ember" data-whatsapp-link href="#" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Ask About the Menu
+            </a>
+            <a class="btn-wi btn-wi--ghost" href="contact.html?service=shisanyama">Send an Enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section class="section section--alt" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="grill-band__inner">
+          <div>
+            <p class="sec-eyebrow">The Experience</p>
+            <h2 class="sec-title reveal" id="experience-title">A Place to Gather</h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              Some places serve food. Others make you feel at home. Grilladin is built for
+              the moments in between — long conversations, good music, and something
+              delicious coming off the fire.
+            </p>
+            <ul class="grill-list reveal" style="--d:140ms">
+              <li>Traditional braai, done over real fire</li>
+              <li>A welcoming space for friends and family</li>
+              <li>Music, atmosphere and good company</li>
+            </ul>
+          </div>
+          <div class="reveal" style="--d:160ms">
+            <div class="img-frame" data-fallback-label="The Grilladin Table" style="aspect-ratio:4/3; border-radius:var(--r-lg)">
+              <img src="assets/images/shisanyama/grilladin-promo.jpg"
+                   alt="Guests gathered around an outdoor braai and dining area" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= GALLERY (Lightbox) ========================= -->
+    <section class="section acc-ember" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Gallery</p>
+        <h2 class="sec-title reveal" id="gallery-title">The Fire, the Food, the Atmosphere</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Tap any image to view it larger.
+          <span class="menu-note">Demonstration imagery until approved Grilladin photography is supplied.</span>
+        </p>
+
+        <div class="lb-grid" style="margin-top:2.25rem">
+
+          <a class="lb-card reveal" href="assets/images/gallery/grilladin-01.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="The braai grill — demonstration image">
+            <span class="img-frame" data-fallback-label="The Braai">
+              <img src="assets/images/gallery/grilladin-01.jpg" alt="Food being grilled over an open braai fire" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>The braai</span><span class="tag">Real Fire</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:60ms" href="assets/images/gallery/grilladin-02.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="Outdoor dining area — demonstration image">
+            <span class="img-frame" data-fallback-label="Outdoor Dining">
+              <img src="assets/images/gallery/grilladin-02.jpg" alt="Welcoming outdoor dining tables under evening light" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Outdoor dining</span><span class="tag">The Space</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:120ms" href="assets/images/gallery/grilladin-03.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="Braai platter — demonstration image">
+            <span class="img-frame" data-fallback-label="The Food">
+              <img src="assets/images/gallery/grilladin-03.jpg" alt="A grilled meat platter served with sides" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Straight off the fire</span><span class="tag">The Food</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:180ms" href="assets/images/gallery/grilladin-04.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="Evening atmosphere — demonstration image">
+            <span class="img-frame" data-fallback-label="The Atmosphere">
+              <img src="assets/images/gallery/grilladin-04.jpg" alt="Warm string lights over an evening braai venue" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Evening vibes</span><span class="tag">The Atmosphere</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:240ms" href="assets/images/gallery/grilladin-05.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="Good company — demonstration image">
+            <span class="img-frame" data-fallback-label="Good Company">
+              <img src="assets/images/gallery/grilladin-05.jpg" alt="Friends sharing a meal together at a long table" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Good company</span><span class="tag">The People</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:300ms" href="assets/images/gallery/grilladin-06.jpg"
+             data-lightbox="wiseinn-grilladin" data-title="Drinks and refreshments — demonstration image">
+            <span class="img-frame" data-fallback-label="Refreshments">
+              <img src="assets/images/gallery/grilladin-06.jpg" alt="Refreshments served on an outdoor table" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Something to sip</span><span class="tag">Drinks</span></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= VISIT US ========================= -->
+    <section class="section section--alt acc-ember" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Visit Us</p>
+        <h2 class="sec-title reveal" id="visit-title">Find the Smoke. Follow the Music.</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Our location details are being finalised. The map below will carry the verified
+          Grilladin pin as soon as the address is confirmed.
+        </p>
+
+        <div class="visit-grid" style="margin-top:2.25rem">
+          <div class="visit-card reveal">
+
+            <div class="visit-row">
+              <svg aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <h4>Address</h4>
+                <!-- TODO: replace with the verified physical address -->
+                <p><strong>Location pending confirmation.</strong><br>
+                The exact address and map pin will be published here before opening.</p>
+              </div>
+            </div>
+
+            <div class="visit-row">
+              <svg aria-hidden="true"><use href="#i-flame"/></svg>
+              <div>
+                <h4>Opening</h4>
+                <p><strong>Opening this Friday.</strong><br>
+                Full opening hours to be confirmed.</p>
+              </div>
+            </div>
+
+            <div class="visit-row">
+              <svg aria-hidden="true"><use href="#i-phone"/></svg>
+              <div>
+                <h4>Call / WhatsApp</h4>
+                <p><a href="tel:+27799722549">+27 79 972 2549</a></p>
+              </div>
+            </div>
+
+            <div class="visit-row">
+              <svg aria-hidden="true"><use href="#i-mail"/></svg>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:wiseinntrading@gmail.com">wiseinntrading@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div>
+              <!-- PLACEHOLDER DIRECTIONS LINK:
+                   This searches Google Maps for the business NAME only.
+                   It is NOT a verified venue pin and uses NO invented coordinates.
+                   TODO: once the client supplies the address, replace with:
+                   https://www.google.com/maps/dir/?api=1&destination=<encoded address or lat,lng> -->
+              <a class="btn-wi btn-wi--ember"
+                 href="https://www.google.com/maps/search/?api=1&amp;query=WISEINN%20Grilladin"
+                 target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-pin"/></svg> Open Google Maps
+              </a>
+              <p class="visit-note" style="margin-top:.7rem">
+                Directions placeholder — a verified route to the venue activates once the
+                address is confirmed.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- MAP PLACEHOLDER: no unrelated location embedded.
+               TODO: replace this .map-ph block with the verified Google Maps
+               embed iframe (loading="lazy") once the address is supplied:
+               <iframe src="https://maps.google.com/maps?q=<verified address>&amp;z=16&amp;output=embed"
+                       loading="lazy" title="WISEINN Grilladin location"
+                       style="border:0;width:100%;height:100%"></iframe> -->
+          <div class="map-ph reveal" style="--d:120ms" role="img"
+               aria-label="Map placeholder — WISEINN Grilladin address pending confirmation">
+            <span class="map-ph__pin" aria-hidden="true">
+              <svg><use href="#i-flame"/></svg>
+            </span>
+            <span class="map-ph__label">
+              <strong>Location pin incoming</strong>
+              WISEINN Grilladin · address being confirmed
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CTA ========================= -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div>
+            <p class="sec-eyebrow acc-ember">Be at the Table</p>
+            <h2 class="reveal" id="cta-title">Got a Group? <span>Bring Them to the Fire.</span></h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              For group enquiries, functions or just to ask about the menu —
+              message the Grilladin team.
+            </p>
+            <div class="hero__cta reveal" style="--d:140ms">
+              <a class="btn-wi btn-wi--ember btn-wi--lg" href="contact.html?service=shisanyama">
+                Make an Enquiry <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="btn-wi btn-wi--ghost btn-wi--lg" data-whatsapp-link href="#" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <div class="cta-contact reveal" style="--d:180ms">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= SHARED FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+          <p style="margin-top:1rem">
+            Transforming homes, outdoor spaces and commercial properties — and bringing
+            people together around the fire.
+          </p>
+          <div class="social-row">
+            <a class="social-btn" href="#" data-social="facebook" aria-label="WISEINN on Facebook (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-facebook"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="instagram" aria-label="WISEINN on Instagram (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="tiktok" aria-label="WISEINN on TikTok (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-tiktok"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Our divisions">
+          <h3>Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="landscaping.html">Wiseinn Landscaping &amp; Outdoor Design</a></li>
+            <li><a href="maintenance.html">SEEFAKO Projects and Design</a></li>
+            <li><a href="shisanyama.html">WISEINN Grilladin</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Quick links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About WISEINN</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="shisanyama.html#menu">Grilladin Menu</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+            <!-- TODO: confirmed address -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-legal">
+        <span>© <span class="js-year">2026</span> WISEINN. All rights reserved.</span>
+        <span>Personal information is handled responsibly in line with POPIA. <a href="about.html">Privacy notice coming soon.</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- ======================= END SHARED FOOTER ======================= -->
+
+  <!-- Floating WhatsApp button (href set safely by main.js) -->
+  <a class="wa-fab" href="#" data-whatsapp-link aria-label="Contact WISEINN on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

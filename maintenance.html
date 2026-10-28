@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- =====================================================================
+    MAINTENANCE.HTML — SEEFAKO Projects and Design (Division 02)
+    Images used (styled fallbacks render automatically if missing):
+      assets/images/maintenance/seefako-hero.jpg
+      assets/images/maintenance/seefako-intro.jpg
+      assets/images/gallery/seefako-01.jpg … seefako-06.jpg
+    TODO: replace https://www.wiseinn.co.za with the real production domain.
+  ====================================================================== -->
+
+  <title>SEEFAKO Projects and Design — Painting, Tiling &amp; Refurbishment | WISEINN</title>
+  <meta name="description" content="SEEFAKO Projects and Design: interior &amp; exterior painting, tiling, refurbishment, alterations, ceilings &amp; drywall, structural work, roofing and professional property maintenance.">
+  <link rel="canonical" href="https://www.wiseinn.co.za/maintenance.html">
+  <meta name="theme-color" content="#101013">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WISEINN">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="SEEFAKO Projects and Design — Painting, Tiling &amp; Refurbishment | WISEINN">
+  <meta property="og:description" content="Craftsmanship, precision and a refined aesthetic — finishes, construction, structural work and property care for homes and businesses.">
+  <meta property="og:url" content="https://www.wiseinn.co.za/maintenance.html">
+  <!-- TODO: supply a 1200×630 share image -->
+  <meta property="og:image" content="https://www.wiseinn.co.za/assets/images/maintenance/seefako-share.jpg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEEFAKO Projects and Design — Painting, Tiling &amp; Refurbishment | WISEINN">
+  <meta name="twitter:description" content="Finishes, construction, structural work and property care — inside and out.">
+  <meta name="twitter:image" content="https://www.wiseinn.co.za/assets/images/maintenance/seefako-share.jpg">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data: breadcrumbs + service (no invented facts) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.wiseinn.co.za/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.wiseinn.co.za/services.html" },
+          { "@type": "ListItem", "position": 3, "name": "SEEFAKO Projects and Design", "item": "https://www.wiseinn.co.za/maintenance.html" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "SEEFAKO Projects and Design",
+        "provider": { "@id": "https://www.wiseinn.co.za/#org" },
+        "areaServed": "ZA",
+        "serviceType": "Painting, tiling, refurbishment, alterations, ceilings, construction, structural work and property maintenance"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ Inline icon sprite (shared + SEEFAKO set) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M17 8C8 10 5.9 16.2 3.8 21.3l1.9.7.9-2.3c.5.2 1 .3 1.4.3C19 20 22 3 22 3c-1 2-8 2.3-12 3.5S4 11 4.6 13.6c.2.9.7 1.7 1.4 2.4C7.4 11.5 11.5 8.7 17 8z"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7 19 13.6 9.9c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.5.8 3.1 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm6.1 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.1-.9-3.5-1.4-5.7-5-5.9-5.2-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.8z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.5-1.5h1.4V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.3c2.5 0 2.8 0 3.8.1 2.5.1 3.7 1.3 3.8 3.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.5-1.3 3.7-3.8 3.8-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.7-1.3-3.8-3.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.3 5.7 5.5 4.5 8 4.4c1-.1 1.3-.1 4-.1zM12 2C9.3 2 9 2 7.9 2.1 4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8C9 22 9.3 22 12 22s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 4.9a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.3-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M19.6 7.2a5 5 0 0 1-3.6-1.6v7.9a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v2.9a2.8 2.8 0 1 0 1.9 2.7V2h2.8a5 5 0 0 0 3.6 4.3v2.9z"/></symbol>
+    <!-- SEEFAKO service icons -->
+    <symbol id="i-paint" viewBox="0 0 24 24"><path fill="currentColor" d="M18 4V3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6h1v4H9v11a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9h8V4h-3z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z" opacity=".9"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 12a8 8 0 1 1-2.3-5.6M20 3v4h-4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 10 6-10 6L2 8l10-6zm-8.5 9.5L12 17l8.5-5.5L22 13l-10 6-10-6 1.5-1.5zm0 5L12 22l8.5-5.5L22 18l-10 6-10-6 1.5-1.5z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path fill="currentColor" d="m13.3 6.1 2.1-2.1 4.6 4.6-2.1 2.1zM2.5 20.4 10 12.9l1.9 1.9-7.5 7.5-1.9-1.9zm11-11.2 2.8-2.8c.4-.4 1-.4 1.4 0l4.2 4.2c.4.4.4 1 0 1.4l-2.8 2.8-5.6-5.6z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1.2 14.2-3.2-3.2 1.4-1.4 1.8 1.8 4.2-4.2 1.4 1.4-5.6 5.6z"/></symbol>
+    <symbol id="i-brick" viewBox="0 0 24 24"><path fill="currentColor" d="M2 5h9v4H2zm11 0h9v4h-9zM2 15h9v4H2zm11 0h9v4h-9zM8 10h8v4H8z"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.6 8 12 11.7 5.4 8 12 4.3zM5 9.7l6 3.4v6.6l-6-3.3V9.7zm8 10v-6.6l6-3.4v6.7l-6 3.3z"/></symbol>
+    <symbol id="i-roof" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 12 12 4l9 8M5.5 10.8V20h13v-9.2"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5.7s.8 2.6.8 4.7c0 2-1.4 3.6-3.4 3.6-2 0-3.6-1.6-3.6-3.6 0-.5.1-1.1.3-1.6C4.8 5.5 3 8.6 3 12.1 3 17 7 21 12 21s9-4 9-8.9C21 6.9 16.6 2.6 13.5.7zM12 19c-1.7 0-3-1.3-3-3 0-1.6 1-2.7 3-4 2 1.3 3 2.4 3 4 0 1.7-1.3 3-3 3z"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2s7 7.5 7 12.5a7 7 0 0 1-14 0C5 9.5 12 2 12 2z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></symbol>
+  </svg>
+
+  <!-- ========================= SHARED HEADER ========================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg nav-wi wrap" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="WISEINN home">
+        <!-- TODO: replace with assets/images/logos/wiseinn-logo.png when confirmed -->
+        <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-4 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="landscaping.html">Landscaping</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="maintenance.html">SEEFAKO Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="shisanyama.html">Grilladin</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn-wi btn-wi--gold btn-wi--sm nav-cta" href="contact.html?service=maintenance">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+  <!-- ======================= END SHARED HEADER ======================= -->
+
+  <main id="main">
+
+    <!-- ========================= PAGE HERO ========================= -->
+    <section class="page-hero acc-gold" aria-labelledby="page-title">
+      <div class="page-hero__media" aria-hidden="true">
+        <!-- TODO: confirm filename -->
+        <img src="assets/images/maintenance/seefako-hero.jpg" alt="" loading="eager"
+             onerror="this.hidden=true">
+      </div>
+      <div class="wrap">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb-wi">
+            <li><a href="index.html">Home</a></li>
+            <li class="sep" aria-hidden="true">/</li>
+            <li><a href="services.html">Services</a></li>
+            <li class="sep" aria-hidden="true">/</li>
+            <li aria-current="page">SEEFAKO Projects</li>
+          </ol>
+        </nav>
+        <p class="sec-eyebrow">Division 02 · SEEFAKO Projects and Design</p>
+        <h1 class="sec-title reveal" id="page-title" style="font-size:var(--fs-hero); max-width:18ch">
+          Craftsmanship. Precision. A Refined Finish.
+        </h1>
+        <p class="sec-lead reveal" style="--d:90ms">
+          We bring craftsmanship, precision and a refined aesthetic to every space we touch —
+          transforming the inside and outside of your property into environments that feel
+          complete, polished and beautifully aligned with your vision.
+        </p>
+        <div class="hero__cta reveal" style="--d:170ms">
+          <a class="btn-wi btn-wi--gold" href="contact.html?service=maintenance">
+            Request a Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn-wi btn-wi--ghost" href="#services">Explore the Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= INTRO ========================= -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="sec-eyebrow">About the Division</p>
+            <h2 class="sec-title reveal" id="intro-title">Homes and Businesses, Finished Properly</h2>
+            <p class="reveal" style="--d:80ms">
+              SEEFAKO Projects and Design is the WISEINN division for building, finishing and
+              maintaining properties. From refreshing outdated spaces and upgrading walls and
+              floors, to giving your property a striking and cohesive exterior look — every
+              finish enhances functionality, elevates appearance and adds long-lasting value.
+            </p>
+            <p class="reveal" style="--d:140ms">
+              Behind every finish sits real construction and structural expertise, and behind
+              every project sits a disciplined promise: we communicate openly, plan thoroughly
+              and work efficiently — so your project is completed <strong>on time, within
+              budget, and above expectation</strong>.
+            </p>
+            <div class="reveal" style="--d:200ms">
+              <a class="btn-wi btn-wi--ghost" href="index.html">Back to WISEINN Home <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+
+          <div class="intro-facts">
+            <div class="intro-fact acc-gold reveal" style="--d:80ms">
+              <svg aria-hidden="true"><use href="#i-paint"/></svg>
+              <div>
+                <h3>Interior &amp; Exterior Finishes</h3>
+                <p>Painting, tiling, ceilings and refurbishment with exceptional attention to detail.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:160ms">
+              <svg aria-hidden="true"><use href="#i-cube"/></svg>
+              <div>
+                <h3>Construction &amp; Structural Work</h3>
+                <p>Safe, durable, high-quality builds — handled with precision and accountability.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:240ms">
+              <svg aria-hidden="true"><use href="#i-tools"/></svg>
+              <div>
+                <h3>Maintenance &amp; Property Care</h3>
+                <p>Keeping your property operating smoothly, safely and efficiently — long term.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SERVICES ========================= -->
+    <section class="section section--alt" id="services" aria-labelledby="svc-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">What We Do</p>
+        <h2 class="sec-title reveal" id="svc-title">SEEFAKO Services</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Confirmed offerings across finishes, construction and maintenance — one team,
+          from the smallest repair to full-scale projects.
+        </p>
+
+        <!-- Group A — Finishes -->
+        <h3 class="reveal" style="margin-top:2.75rem; font-size:1.15rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold)">
+          Interior &amp; Exterior Finishes
+        </h3>
+        <div class="svc-block" style="margin-top:1.25rem">
+          <div class="svc-item acc-gold reveal">
+            <svg aria-hidden="true"><use href="#i-paint"/></svg>
+            <h3>Painting &amp; Wall Coatings</h3>
+            <p>Interior and exterior painting and wall coatings that refresh, protect and transform any space.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:60ms">
+            <svg aria-hidden="true"><use href="#i-grid"/></svg>
+            <h3>Floor &amp; Wall Tiling</h3>
+            <p>Precise, cleanly aligned tiling for floors and walls — durable and beautifully finished.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:120ms">
+            <svg aria-hidden="true"><use href="#i-refresh"/></svg>
+            <h3>Refurbishment</h3>
+            <p>Refreshing outdated spaces into modern, functional environments with premium attention to detail.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:180ms">
+            <svg aria-hidden="true"><use href="#i-layers"/></svg>
+            <h3>Ceilings &amp; Drywall</h3>
+            <p>Ceiling installations, drywall and wall details that give interiors a polished, cohesive finish.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:240ms">
+            <svg aria-hidden="true"><use href="#i-home"/></svg>
+            <h3>Exterior Revamping</h3>
+            <p>Durable, elegant exterior treatments that give your property a striking, cohesive street appeal.</p>
+          </div>
+        </div>
+
+        <!-- Group B — Construction & Structural -->
+        <h3 class="reveal" style="margin-top:3rem; font-size:1.15rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold)">
+          Construction &amp; Structural Work
+        </h3>
+        <p class="sec-lead reveal" style="--d:60ms; font-size:.95rem">
+          The foundation for safe, durable, high-quality builds — every project handled with
+          precision, accountability and strict adherence to industry standards.
+        </p>
+        <div class="svc-block" style="margin-top:1.25rem">
+          <div class="svc-item acc-gold reveal">
+            <svg aria-hidden="true"><use href="#i-hammer"/></svg>
+            <h3>Building &amp; Alterations</h3>
+            <p>Complete construction of new structures and carefully planned modifications that improve layout, expand space or upgrade functionality.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:60ms">
+            <svg aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3>Structural Repairs</h3>
+            <p>Reinforcement and restoration of weakened or damaged areas to ensure long-term safety, stability and compliance with building regulations.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:120ms">
+            <svg aria-hidden="true"><use href="#i-brick"/></svg>
+            <h3>Masonry &amp; Brickwork</h3>
+            <p>Strong, accurately aligned brick and block work that forms the backbone of durable walls, boundary structures and building frames.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:180ms">
+            <svg aria-hidden="true"><use href="#i-cube"/></svg>
+            <h3>Foundations &amp; Concrete Work</h3>
+            <p>High-strength foundation systems and concrete applications designed to support the entire structure with dependable load-bearing performance.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:240ms">
+            <svg aria-hidden="true"><use href="#i-roof"/></svg>
+            <h3>Roofing &amp; Structural Framing</h3>
+            <p>Secure roof installation and framing solutions that protect the building while contributing to its overall structural integrity.</p>
+          </div>
+        </div>
+
+        <!-- Group C — Maintenance -->
+        <h3 class="reveal" style="margin-top:3rem; font-size:1.15rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold)">
+          Maintenance &amp; Property Care
+        </h3>
+        <p class="sec-lead reveal" style="--d:60ms; font-size:.95rem">
+          Keeping your property operating smoothly, safely and efficiently — addressing both
+          immediate needs and long-term functionality.
+        </p>
+        <div class="svc-block" style="margin-top:1.25rem">
+          <div class="svc-item acc-gold reveal">
+            <svg aria-hidden="true"><use href="#i-flame"/></svg>
+            <h3>Geyser Installation &amp; Servicing</h3>
+            <p>Safe installation, maintenance and troubleshooting of geysers to ensure consistent hot water supply and energy efficiency.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:60ms">
+            <svg aria-hidden="true"><use href="#i-drop"/></svg>
+            <h3>Leak Detection &amp; Repairs</h3>
+            <p>Quick identification and repair of leaks to prevent water damage, reduce waste and restore proper system performance.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:120ms">
+            <svg aria-hidden="true"><use href="#i-waves"/></svg>
+            <h3>Drainage &amp; Blockage Clearing</h3>
+            <p>Effective removal of blockages and improved drainage flow to keep your plumbing system running without interruptions.</p>
+          </div>
+          <div class="svc-item acc-gold reveal" style="--d:180ms">
+            <svg aria-hidden="true"><use href="#i-spark"/></svg>
+            <h3>Home Improvement</h3>
+            <p>Upgrades and improvements that enhance comfort, beauty and long-term value — planned and delivered with care.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= BENEFITS ========================= -->
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="wrap">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="sec-eyebrow">Why It Matters</p>
+            <h2 class="sec-title reveal" id="benefits-title">The Value of Professional Property Care</h2>
+            <p class="reveal" style="--d:80ms">
+              A well-maintained, well-finished property is worth more — financially and in the
+              way it feels every day. Professional workmanship protects your investment, keeps
+              your family or customers safe, and prevents small issues from becoming costly ones.
+            </p>
+            <p class="reveal" style="--d:140ms">
+              With SEEFAKO, one multidisciplinary team covers finishes, construction and
+              maintenance — so standards stay consistent across everything your property needs.
+            </p>
+          </div>
+
+          <div class="intro-facts">
+            <div class="intro-fact acc-gold reveal" style="--d:80ms">
+              <svg aria-hidden="true"><use href="#i-shield"/></svg>
+              <div>
+                <h3>Safety First</h3>
+                <p>Structural work and repairs executed to industry standards — long-term safety and stability.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:160ms">
+              <svg aria-hidden="true"><use href="#i-home"/></svg>
+              <div>
+                <h3>Protects Your Investment</h3>
+                <p>Durable finishes and solid structures that look stunning and stand the test of time.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:240ms">
+              <svg aria-hidden="true"><use href="#i-tools"/></svg>
+              <div>
+                <h3>One Team, Every Trade</h3>
+                <p>Skilled artisans, technicians and project specialists under one roof — no juggling contractors.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:320ms">
+              <svg aria-hidden="true"><use href="#i-spark"/></svg>
+              <div>
+                <h3>On Time. On Budget.</h3>
+                <p>Open communication and thorough planning — completed on schedule, within budget, above expectation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= GALLERY (Lightbox) ========================= -->
+    <section class="section section--alt acc-gold" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Gallery</p>
+        <h2 class="sec-title reveal" id="gallery-title">Finishes, Builds &amp; Transformations</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Tap any image to view it larger.
+          <span class="menu-note">Shown for style reference until approved WISEINN project photography is available.</span>
+        </p>
+
+        <div class="lb-grid" style="margin-top:2.25rem">
+
+          <a class="lb-card reveal" href="assets/images/gallery/seefako-01.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Interior painting and wall coatings — demonstration image">
+            <span class="img-frame" data-fallback-label="Painting">
+              <img src="assets/images/gallery/seefako-01.jpg" alt="Freshly painted interior wall with a smooth finish" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Painting &amp; coatings</span><span class="tag">Finishes</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:60ms" href="assets/images/gallery/seefako-02.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Floor and wall tiling — demonstration image">
+            <span class="img-frame" data-fallback-label="Tiling">
+              <img src="assets/images/gallery/seefako-02.jpg" alt="Neatly laid floor tiles in a modern room" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Tiling</span><span class="tag">Finishes</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:120ms" href="assets/images/gallery/seefako-03.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Interior refurbishment — demonstration image">
+            <span class="img-frame" data-fallback-label="Refurbishment">
+              <img src="assets/images/gallery/seefako-03.jpg" alt="Refurbished living space with modern finishes" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Refurbishment</span><span class="tag">Interiors</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:180ms" href="assets/images/gallery/seefako-04.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Ceiling and drywall detailing — demonstration image">
+            <span class="img-frame" data-fallback-label="Ceilings">
+              <img src="assets/images/gallery/seefako-04.jpg" alt="Clean ceiling installation with wall detailing" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Ceilings &amp; drywall</span><span class="tag">Interiors</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:240ms" href="assets/images/gallery/seefako-05.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Masonry and brickwork — demonstration image">
+            <span class="img-frame" data-fallback-label="Masonry">
+              <img src="assets/images/gallery/seefako-05.jpg" alt="Accurately aligned brickwork on a boundary wall" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Masonry &amp; brickwork</span><span class="tag">Construction</span></span>
+          </a>
+
+          <a class="lb-card reveal" style="--d:300ms" href="assets/images/gallery/seefako-06.jpg"
+             data-lightbox="wiseinn-seefako" data-title="Roofing and structural framing — demonstration image">
+            <span class="img-frame" data-fallback-label="Roofing">
+              <img src="assets/images/gallery/seefako-06.jpg" alt="Roof installation with structural framing" loading="lazy">
+            </span>
+            <span class="lb-card__cap"><span>Roofing &amp; framing</span><span class="tag">Construction</span></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= OTHER DIVISIONS ========================= -->
+    <section class="section" aria-labelledby="more-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Explore More of WISEINN</p>
+        <h2 class="sec-title reveal" id="more-title">One Brand, Two More Ways We Can Help</h2>
+
+        <div class="svc-block" style="margin-top:2rem">
+          <a class="svc-item acc-green reveal" href="landscaping.html">
+            <svg aria-hidden="true"><use href="#i-leaf"/></svg>
+            <h3>Wiseinn Landscaping &amp; Outdoor Design</h3>
+            <p>Gardens, swimming pools, paving, irrigation, plumbing, JoJo tanks and complete outdoor transformation.</p>
+            <span class="go">Explore Landscaping <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="svc-item acc-ember reveal" style="--d:90ms" href="shisanyama.html">
+            <svg aria-hidden="true"><use href="#i-flame"/></svg>
+            <h3>WISEINN Grilladin</h3>
+            <p>Our shisanyama destination — braai, food, music and good company. Opening this Friday.</p>
+            <span class="go">Visit the Grilladin <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CTA ========================= -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div>
+            <p class="sec-eyebrow acc-gold">From the Smallest Repair to Full-Scale Projects</p>
+            <h2 class="reveal" id="cta-title">Tell Us About Your Project. <span>We'll Finish It Properly.</span></h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              Painting, tiling, refurbishment, building work or ongoing maintenance —
+              start with a free quote from SEEFAKO.
+            </p>
+            <div class="hero__cta reveal" style="--d:140ms">
+              <a class="btn-wi btn-wi--gold btn-wi--lg" href="contact.html?service=maintenance">
+                Request a Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="btn-wi btn-wi--ghost btn-wi--lg" data-whatsapp-link href="#" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <div class="cta-contact reveal" style="--d:180ms">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= SHARED FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+          <p style="margin-top:1rem">
+            Transforming homes, outdoor spaces and commercial properties — and bringing
+            people together around the fire.
+          </p>
+          <div class="social-row">
+            <a class="social-btn" href="#" data-social="facebook" aria-label="WISEINN on Facebook (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-facebook"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="instagram" aria-label="WISEINN on Instagram (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="tiktok" aria-label="WISEINN on TikTok (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-tiktok"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Our divisions">
+          <h3>Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="landscaping.html">Wiseinn Landscaping &amp; Outdoor Design</a></li>
+            <li><a href="maintenance.html">SEEFAKO Projects and Design</a></li>
+            <li><a href="shisanyama.html">WISEINN Grilladin</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Quick links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About WISEINN</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="shisanyama.html">Menu &amp; Directions</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+            <!-- TODO: confirmed address -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-legal">
+        <span>© <span class="js-year">2026</span> WISEINN. All rights reserved.</span>
+        <span>Personal information is handled responsibly in line with POPIA. <a href="about.html">Privacy notice coming soon.</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- ======================= END SHARED FOOTER ======================= -->
+
+  <!-- Floating WhatsApp button (href set safely by main.js) -->
+  <a class="wa-fab" href="#" data-whatsapp-link aria-label="Contact WISEINN on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- =====================================================================
+    INDEX.HTML — WISEINN HOMEPAGE
+    ---------------------------------------------------------------------
+    ASSET CHECKLIST (place these files; styled fallbacks render if missing):
+      assets/images/hero/wiseinn-hero.jpg          composite hero scene
+      assets/images/logos/landscaping-logo.png     division logo
+      assets/images/logos/seefako-logo.png         division logo
+      assets/images/logos/grilladin-logo.png       division logo
+      assets/images/landscaping/landscaping-feature.jpg
+      assets/images/maintenance/seefako-feature.jpg
+      assets/images/shisanyama/grilladin-feature.jpg
+      assets/images/gallery/project-01.jpg … project-06.jpg
+    TODO: replace https://www.wiseinn.co.za with the real production domain.
+  ====================================================================== -->
+
+  <title>WISEINN | Landscaping, Property Projects &amp; Grilladin — One Vision, Three Ways</title>
+  <meta name="description" content="WISEINN unites Wiseinn Landscaping &amp; Outdoor Design, SEEFAKO Projects and Design, and WISEINN Grilladin — property transformation, professional maintenance and a true South African braai experience.">
+  <link rel="canonical" href="https://www.wiseinn.co.za/">
+  <meta name="theme-color" content="#101013">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WISEINN">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="WISEINN | One Vision. Three Ways to Make Life Better.">
+  <meta property="og:description" content="Landscaping &amp; outdoor design, property projects &amp; maintenance, and the WISEINN Grilladin braai experience.">
+  <meta property="og:url" content="https://www.wiseinn.co.za/">
+  <!-- TODO: provide a 1200×630 share image -->
+  <meta property="og:image" content="https://www.wiseinn.co.za/assets/images/hero/wiseinn-share.jpg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WISEINN | One Vision. Three Ways to Make Life Better.">
+  <meta name="twitter:description" content="Landscaping, property projects &amp; maintenance, and the WISEINN Grilladin braai experience.">
+  <meta name="twitter:image" content="https://www.wiseinn.co.za/assets/images/hero/wiseinn-share.jpg">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: swap-enabled with strong local fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data: verified facts only (from company profile PDF).
+       Address intentionally omitted until the client confirms it. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.wiseinn.co.za/#org",
+        "name": "WISEINN",
+        "url": "https://www.wiseinn.co.za/",
+        "email": "wiseinntrading@gmail.com",
+        "telephone": "+27799722549",
+        "areaServed": "ZA",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+27799722549",
+          "contactType": "customer service",
+          "areaServed": "ZA",
+          "availableLanguage": ["en"]
+        },
+        "department": [
+          { "@type": "Organization", "name": "Wiseinn Landscaping & Outdoor Design" },
+          { "@type": "Organization", "name": "SEEFAKO Projects and Design" },
+          { "@type": "Organization", "name": "WISEINN Grilladin" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.wiseinn.co.za/#website",
+        "url": "https://www.wiseinn.co.za/",
+        "name": "WISEINN",
+        "publisher": { "@id": "https://www.wiseinn.co.za/#org" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ Inline icon sprite (shared) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M17 8C8 10 5.9 16.2 3.8 21.3l1.9.7.9-2.3c.5.2 1 .3 1.4.3C19 20 22 3 22 3c-1 2-8 2.3-12 3.5S4 11 4.6 13.6c.2.9.7 1.7 1.4 2.4C7.4 11.5 11.5 8.7 17 8z"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7 19 13.6 9.9c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5.7s.8 2.6.8 4.7c0 2-1.4 3.6-3.4 3.6-2 0-3.6-1.6-3.6-3.6 0-.5.1-1.1.3-1.6C4.8 5.5 3 8.6 3 12.1 3 17 7 21 12 21s9-4 9-8.9C21 6.9 16.6 2.6 13.5.7zM12 19c-1.7 0-3-1.3-3-3 0-1.6 1-2.7 3-4 2 1.3 3 2.4 3 4 0 1.7-1.3 3-3 3z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.5 5 5 10-11"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.5.8 3.1 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm6.1 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.1-.9-3.5-1.4-5.7-5-5.9-5.2-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.8z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.5-1.5h1.4V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.3c2.5 0 2.8 0 3.8.1 2.5.1 3.7 1.3 3.8 3.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.5-1.3 3.7-3.8 3.8-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.7-1.3-3.8-3.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.3 5.7 5.5 4.5 8 4.4c1-.1 1.3-.1 4-.1zM12 2C9.3 2 9 2 7.9 2.1 4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8C9 22 9.3 22 12 22s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 4.9a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.3-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M19.6 7.2a5 5 0 0 1-3.6-1.6v7.9a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v2.9a2.8 2.8 0 1 0 1.9 2.7V2h2.8a5 5 0 0 0 3.6 4.3v2.9z"/></symbol>
+  </svg>
+
+  <!-- ========================= SHARED HEADER ========================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg nav-wi wrap" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="WISEINN home">
+        <!-- TODO: replace with assets/images/logos/wiseinn-logo.png when confirmed
+             <img class="brand-logo" src="assets/images/logos/wiseinn-logo.png" alt="WISEINN logo"> -->
+        <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-4 gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="landscaping.html">Landscaping</a></li>
+          <li class="nav-item"><a class="nav-link" href="maintenance.html">SEEFAKO Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="shisanyama.html">Grilladin</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn-wi btn-wi--gold btn-wi--sm nav-cta" href="contact.html">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+  <!-- ======================= END SHARED HEADER ======================= -->
+
+  <main id="main">
+
+    <!-- =========================== HERO =========================== -->
+    <section class="hero" aria-label="Welcome to WISEINN">
+      <div class="hero__media" aria-hidden="true">
+        <!-- TODO: confirm hero filename. This is the LCP image — never lazy-load it. -->
+        <img src="assets/images/hero/wiseinn-hero.jpg"
+             alt="" fetchpriority="high"
+             onerror="this.hidden=true">
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__body">
+        <div class="wrap">
+          <p class="hero__eyebrow reveal">Landscaping · Projects · Braai</p>
+          <h1 class="hero__title reveal" style="--d:90ms">One Vision. <em>Three Ways</em> to Make Life Better.</h1>
+          <p class="hero__lead reveal" style="--d:180ms">
+            From maintaining your property and transforming outdoor spaces to bringing
+            people together over great food — discover the WISEINN experience.
+          </p>
+          <div class="hero__cta reveal" style="--d:260ms">
+            <a class="btn-wi btn-wi--gold" href="contact.html">
+              Get a Free Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn-wi btn-wi--ghost" href="services.html">Explore Our Services</a>
+            <a class="btn-wi btn-wi--ember" href="shisanyama.html">
+              <svg aria-hidden="true"><use href="#i-flame"/></svg> Grilladin — Opening Friday
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Division logos drifting left → right, in front of the hero image.
+           Replace the three logo src paths with the official client files. -->
+      <div class="logo-marquee reveal" style="--d:340ms" aria-label="Our three divisions">
+        <div class="logo-marquee__track">
+          <!-- Set A (real content) -->
+          <a class="marquee-logo acc-green" href="landscaping.html" aria-label="Wiseinn Landscaping and Outdoor Design">
+            <img src="assets/images/logos/landscaping-logo.png" alt=""
+                 onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <span class="marquee-logo__text" hidden>Wiseinn Landscaping &amp; Outdoor Design</span>
+          </a>
+          <span class="marquee-sep" aria-hidden="true">✦</span>
+          <a class="marquee-logo acc-gold" href="maintenance.html" aria-label="SEEFAKO Projects and Design">
+            <img src="assets/images/logos/seefako-logo.png" alt=""
+                 onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <span class="marquee-logo__text" hidden>SEEFAKO Projects and Design</span>
+          </a>
+          <span class="marquee-sep" aria-hidden="true">✦</span>
+          <a class="marquee-logo acc-ember" href="shisanyama.html" aria-label="WISEINN Grilladin">
+            <img src="assets/images/logos/grilladin-logo.png" alt=""
+                 onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <span class="marquee-logo__text" hidden>WISEINN Grilladin</span>
+          </a>
+          <span class="marquee-sep" aria-hidden="true">✦</span>
+          <!-- Set B (seamless-loop duplicate) -->
+          <span aria-hidden="true" style="display:contents">
+            <a class="marquee-logo acc-green" href="landscaping.html" tabindex="-1">
+              <img src="assets/images/logos/landscaping-logo.png" alt=""
+                   onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+              <span class="marquee-logo__text" hidden>Wiseinn Landscaping &amp; Outdoor Design</span>
+            </a>
+            <span class="marquee-sep">✦</span>
+            <a class="marquee-logo acc-gold" href="maintenance.html" tabindex="-1">
+              <img src="assets/images/logos/seefako-logo.png" alt=""
+                   onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+              <span class="marquee-logo__text" hidden>SEEFAKO Projects and Design</span>
+            </a>
+            <span class="marquee-sep">✦</span>
+            <a class="marquee-logo acc-ember" href="shisanyama.html" tabindex="-1">
+              <img src="assets/images/logos/grilladin-logo.png" alt=""
+                   onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+              <span class="marquee-logo__text" hidden>WISEINN Grilladin</span>
+            </a>
+            <span class="marquee-sep">✦</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Division panels -->
+      <div class="divisions">
+        <div class="wrap">
+          <div class="divisions__grid">
+
+            <a class="division-panel acc-green reveal" style="--d:120ms" href="landscaping.html">
+              <span class="division-panel__num" aria-hidden="true">01</span>
+              <span class="division-panel__logo">
+                <img src="assets/images/logos/landscaping-logo.png" alt="Wiseinn Landscaping &amp; Outdoor Design logo"
+                     onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                <span class="logo-ph" hidden>Landscaping</span>
+              </span>
+              <h2 class="division-panel__name">Wiseinn Landscaping &amp; Outdoor Design</h2>
+              <p class="division-panel__tag">Gardens, pools, paving and complete outdoor transformation.</p>
+              <span class="division-panel__go">Explore Landscaping <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+
+            <a class="division-panel acc-gold reveal" style="--d:220ms" href="maintenance.html">
+              <span class="division-panel__num" aria-hidden="true">02</span>
+              <span class="division-panel__logo">
+                <img src="assets/images/logos/seefako-logo.png" alt="SEEFAKO Projects and Design logo"
+                     onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                <span class="logo-ph" hidden>SEEFAKO</span>
+              </span>
+              <h2 class="division-panel__name">SEEFAKO Projects and Design</h2>
+              <p class="division-panel__tag">Painting, tiling, refurbishment, alterations and home improvement.</p>
+              <span class="division-panel__go">Explore Projects <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+
+            <a class="division-panel acc-ember reveal" style="--d:320ms" href="shisanyama.html">
+              <span class="division-panel__num" aria-hidden="true">03</span>
+              <span class="division-panel__logo">
+                <img src="assets/images/logos/grilladin-logo.png" alt="WISEINN Grilladin logo"
+                     onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                <span class="logo-ph" hidden>Grilladin</span>
+              </span>
+              <h2 class="division-panel__name">WISEINN Grilladin</h2>
+              <p class="division-panel__tag">Braai, food, music and good company — opening this Friday.</p>
+              <span class="division-panel__go">Visit Grilladin <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= END HERO ========================= -->
+
+    <!-- Service ticker (from the company profile tagline) -->
+    <div class="ticker" aria-label="Our services at a glance">
+      <div class="ticker__track">
+        <span class="ticker__item">Painting <span class="dot"></span></span>
+        <span class="ticker__item">Plumbing <span class="dot"></span></span>
+        <span class="ticker__item">Paving <span class="dot"></span></span>
+        <span class="ticker__item">Tiling <span class="dot"></span></span>
+        <span class="ticker__item">Gardening <span class="dot"></span></span>
+        <span class="ticker__item">Refurbishment <span class="dot"></span></span>
+        <span class="ticker__item">Swimming Pools <span class="dot"></span></span>
+        <span class="ticker__item">Pergolas <span class="dot"></span></span>
+        <span class="ticker__item">Irrigation <span class="dot"></span></span>
+        <span class="ticker__item">JoJo Tanks <span class="dot"></span></span>
+        <span class="ticker__item">Roofing <span class="dot"></span></span>
+        <span class="ticker__item">Braai &amp; Good Company <span class="dot"></span></span>
+        <!-- duplicate for seamless loop -->
+        <span aria-hidden="true" style="display:contents">
+          <span class="ticker__item">Painting <span class="dot"></span></span>
+          <span class="ticker__item">Plumbing <span class="dot"></span></span>
+          <span class="ticker__item">Paving <span class="dot"></span></span>
+          <span class="ticker__item">Tiling <span class="dot"></span></span>
+          <span class="ticker__item">Gardening <span class="dot"></span></span>
+          <span class="ticker__item">Refurbishment <span class="dot"></span></span>
+          <span class="ticker__item">Swimming Pools <span class="dot"></span></span>
+          <span class="ticker__item">Pergolas <span class="dot"></span></span>
+          <span class="ticker__item">Irrigation <span class="dot"></span></span>
+          <span class="ticker__item">JoJo Tanks <span class="dot"></span></span>
+          <span class="ticker__item">Roofing <span class="dot"></span></span>
+          <span class="ticker__item">Braai &amp; Good Company <span class="dot"></span></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- ========================= INTRODUCTION ========================= -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="sec-eyebrow">About WISEINN</p>
+            <h2 class="sec-title reveal" id="intro-title">One Brand. Three Divisions. Every Space Transformed.</h2>
+            <p class="reveal" style="--d:80ms">
+              WISEINN is a multi-disciplinary company dedicated to transforming homes, outdoor
+              spaces and commercial properties into functional, stylish and sustainable
+              environments. We take pride in delivering high-quality workmanship, innovative
+              designs and reliable project management across every service we provide.
+            </p>
+            <p class="reveal" style="--d:140ms">
+              We believe that <strong>every space holds potential</strong>. Whether it's a simple
+              garden refresh, a complete property transformation or an evening around the fire
+              with great food, we work closely with our clients to bring their vision to life —
+              with safety, quality and craftsmanship at the centre of everything we do.
+            </p>
+            <div class="reveal" style="--d:200ms">
+              <a class="btn-wi btn-wi--ghost" href="about.html">More About WISEINN <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+
+          <div class="intro-facts">
+            <div class="intro-fact acc-green reveal" style="--d:80ms">
+              <svg aria-hidden="true"><use href="#i-leaf"/></svg>
+              <div>
+                <h3>Outdoor Excellence</h3>
+                <p>Landscaping, pools, paving, irrigation and garden makeovers that elevate any property.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-gold reveal" style="--d:160ms">
+              <svg aria-hidden="true"><use href="#i-tools"/></svg>
+              <div>
+                <h3>Projects &amp; Property Care</h3>
+                <p>Painting, tiling, ceilings, alterations and full home improvement — done properly.</p>
+              </div>
+            </div>
+            <div class="intro-fact acc-ember reveal" style="--d:240ms">
+              <svg aria-hidden="true"><use href="#i-flame"/></svg>
+              <div>
+                <h3>The Grilladin Table</h3>
+                <p>A true South African braai destination — food, music and good company. Opening Friday.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SERVICE CARDS ========================= -->
+    <section class="section section--alt" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Our Divisions</p>
+        <h2 class="sec-title reveal" id="services-title">Three Ways We Work For You</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Each division carries its own character and expertise — and all of them carry the
+          same WISEINN standard of care.
+        </p>
+
+        <div class="svc-grid" style="margin-top:2.5rem">
+
+          <!-- Landscaping -->
+          <article class="svc-card acc-green reveal">
+            <div class="img-frame svc-card__media" data-fallback-label="Landscaping">
+              <img src="assets/images/landscaping/landscaping-feature.jpg"
+                   alt="Lush landscaped garden with lawn and paved pathway" loading="lazy">
+            </div>
+            <div class="svc-card__body">
+              <p class="svc-card__eyebrow">Division 01</p>
+              <h3 class="svc-card__title">Wiseinn Landscaping &amp; Outdoor Design</h3>
+              <p class="svc-card__text">Tailored outdoor concepts that blend functionality, nature and aesthetics to elevate any property.</p>
+              <ul class="svc-card__list">
+                <li>Landscaping &amp; garden design</li>
+                <li>New swimming pools</li>
+                <li>Pool cleaning &amp; maintenance</li>
+                <li>Paving, irrigation &amp; plumbing</li>
+                <li>JoJo tank installation</li>
+              </ul>
+              <div class="svc-card__foot">
+                <a class="btn-wi btn-wi--green btn-wi--sm" href="landscaping.html">Explore <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <a class="btn-wi btn-wi--ghost btn-wi--sm" href="contact.html?service=landscaping">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SEEFAKO Projects and Design -->
+          <article class="svc-card acc-gold reveal" style="--d:100ms">
+            <div class="img-frame svc-card__media" data-fallback-label="SEEFAKO Projects">
+              <img src="assets/images/maintenance/seefako-feature.jpg"
+                   alt="Freshly painted and refurbished interior living space" loading="lazy">
+            </div>
+            <div class="svc-card__body">
+              <p class="svc-card__eyebrow">Division 02</p>
+              <h3 class="svc-card__title">SEEFAKO Projects and Design</h3>
+              <p class="svc-card__text">Craftsmanship, precision and a refined aesthetic for homes and businesses — inside and out.</p>
+              <ul class="svc-card__list">
+                <li>Interior &amp; exterior painting</li>
+                <li>Tiling &amp; refurbishment</li>
+                <li>Alterations, ceilings &amp; drywall</li>
+                <li>Roofing &amp; structural work</li>
+                <li>Full home improvement</li>
+              </ul>
+              <div class="svc-card__foot">
+                <a class="btn-wi btn-wi--gold btn-wi--sm" href="maintenance.html">Explore <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <a class="btn-wi btn-wi--ghost btn-wi--sm" href="contact.html?service=maintenance">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- WISEINN Grilladin -->
+          <article class="svc-card acc-ember reveal" style="--d:200ms">
+            <div class="img-frame svc-card__media" data-fallback-label="WISEINN Grilladin">
+              <img src="assets/images/shisanyama/grilladin-feature.jpg"
+                   alt="Flames rising over a braai grill at an outdoor dining venue" loading="lazy">
+            </div>
+            <div class="svc-card__body">
+              <p class="svc-card__eyebrow">Division 03</p>
+              <h3 class="svc-card__title">WISEINN Grilladin</h3>
+              <p class="svc-card__text">Our shisanyama destination — braai, food, music and good company. Doors open this Friday.</p>
+              <ul class="svc-card__list">
+                <li>Traditional braai experience</li>
+                <li>Family-friendly dining</li>
+                <li>Music &amp; good vibes</li>
+                <li>Menu — arriving soon</li>
+              </ul>
+              <div class="svc-card__foot">
+                <a class="btn-wi btn-wi--ember btn-wi--sm" href="shisanyama.html">Visit <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <a class="btn-wi btn-wi--ghost btn-wi--sm" href="contact.html?service=shisanyama">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= WHY CHOOSE US ========================= -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Why Choose WISEINN?</p>
+        <h2 class="sec-title reveal" id="why-title">More Than a Service — Peace of Mind</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Choosing us means partnering with a team that respects your vision, understands your
+          needs, and handles your property with the utmost care.
+        </p>
+
+        <div class="why-grid" style="margin-top:2.5rem">
+          <div class="why-item acc-green reveal">
+            <span class="why-item__num">01</span>
+            <h3>Skilled Craftsmanship</h3>
+            <p>A multidisciplinary team of artisans, technicians and project specialists who take pride in meticulous workmanship.</p>
+          </div>
+          <div class="why-item acc-gold reveal" style="--d:80ms">
+            <span class="why-item__num">02</span>
+            <h3>Client-Centred Philosophy</h3>
+            <p>We communicate openly, plan thoroughly and work closely with you from first idea to final handover.</p>
+          </div>
+          <div class="why-item acc-ember reveal" style="--d:160ms">
+            <span class="why-item__num">03</span>
+            <h3>On Time. On Budget.</h3>
+            <p>Projects are planned properly and executed efficiently — completed on schedule, within budget and above expectation.</p>
+          </div>
+          <div class="why-item acc-green reveal" style="--d:100ms">
+            <span class="why-item__num">04</span>
+            <h3>Durability &amp; Sustainability</h3>
+            <p>We prioritise durability, sustainability and aesthetics — creating spaces that look stunning and stand the test of time.</p>
+          </div>
+          <div class="why-item acc-gold reveal" style="--d:180ms">
+            <span class="why-item__num">05</span>
+            <h3>Comprehensive Service</h3>
+            <p>From the smallest repair to full-scale construction and landscaping, one trusted partner covers it all.</p>
+          </div>
+          <div class="why-item acc-ember reveal" style="--d:260ms">
+            <span class="why-item__num">06</span>
+            <h3>Integrity &amp; Reliability</h3>
+            <p>Our commitment to integrity and superior service has earned us a reputation as a trusted, long-term partner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= GALLERY ========================= -->
+    <section class="section section--alt" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">Featured Work</p>
+        <h2 class="sec-title reveal" id="gallery-title">Spaces With Potential, Realised</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          A glimpse of the environments we create — gardens, finishes and fire.
+          <span class="menu-note">Gallery shown with demonstration imagery until approved WISEINN project photography is supplied.</span>
+        </p>
+      </div>
+
+      <div class="wrap" style="margin-top:2.25rem">
+        <div class="swiper gallery-swiper" data-swiper="gallery">
+          <div class="swiper-wrapper">
+
+            <figure class="swiper-slide gallery-card acc-green">
+              <span class="img-frame" data-fallback-label="Garden Design">
+                <img src="assets/images/gallery/project-01.jpg" alt="Landscaped garden with fresh lawn and planted beds" loading="lazy">
+              </span>
+              <figcaption><span>Garden design &amp; refresh</span><span class="tag">Landscaping</span></figcaption>
+            </figure>
+
+            <figure class="swiper-slide gallery-card acc-green">
+              <span class="img-frame" data-fallback-label="Paving">
+                <img src="assets/images/gallery/project-02.jpg" alt="Newly paved driveway and walkway" loading="lazy">
+              </span>
+              <figcaption><span>Paving — driveways &amp; patios</span><span class="tag">Landscaping</span></figcaption>
+            </figure>
+
+            <figure class="swiper-slide gallery-card acc-green">
+              <span class="img-frame" data-fallback-label="Swimming Pool">
+                <img src="assets/images/gallery/project-03.jpg" alt="Swimming pool installation beside a landscaped garden" loading="lazy">
+              </span>
+              <figcaption><span>Swimming pools</span><span class="tag">Landscaping</span></figcaption>
+            </figure>
+
+            <figure class="swiper-slide gallery-card acc-gold">
+              <span class="img-frame" data-fallback-label="Painting">
+                <img src="assets/images/gallery/project-04.jpg" alt="Interior wall being painted with a smooth finish" loading="lazy">
+              </span>
+              <figcaption><span>Painting &amp; finishes</span><span class="tag">SEEFAKO</span></figcaption>
+            </figure>
+
+            <figure class="swiper-slide gallery-card acc-gold">
+              <span class="img-frame" data-fallback-label="Refurbishment">
+                <img src="assets/images/gallery/project-05.jpg" alt="Refurbished interior space with new tiling and ceiling" loading="lazy">
+              </span>
+              <figcaption><span>Refurbishment &amp; tiling</span><span class="tag">SEEFAKO</span></figcaption>
+            </figure>
+
+            <figure class="swiper-slide gallery-card acc-ember">
+              <span class="img-frame" data-fallback-label="The Grill">
+                <img src="assets/images/gallery/project-06.jpg" alt="Braai grill with food being prepared over open flames" loading="lazy">
+              </span>
+              <figcaption><span>The Grilladin fire</span><span class="tag">Grilladin</span></figcaption>
+            </figure>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev" aria-label="Previous project"></div>
+          <div class="swiper-button-next" aria-label="Next project"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= GRILLADIN PROMO ========================= -->
+    <section class="section grill-band acc-ember" aria-labelledby="grill-title">
+      <div class="wrap">
+        <div class="grill-band__inner">
+          <div>
+            <span class="badge-opening reveal">
+              <svg aria-hidden="true"><use href="#i-flame"/></svg> Opening This Friday
+            </span>
+            <h2 class="sec-title reveal" id="grill-title" style="margin-top:1.2rem">
+              Come for the Braai. Stay for the Feeling.
+            </h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              WISEINN Grilladin is our shisanyama home — a place where the fire is always warm,
+              the food is honest, and the company is even better.
+            </p>
+            <ul class="grill-list reveal" style="--d:140ms">
+              <li>Braai done properly, over real fire</li>
+              <li>A welcoming space for friends and family</li>
+              <li>Music, atmosphere and good company</li>
+            </ul>
+            <p class="grill-note">Menu and hours will be published here shortly.</p>
+          </div>
+          <div class="reveal" style="--d:160ms">
+            <div class="img-frame" data-fallback-label="Grilladin" style="aspect-ratio:4/3; border-radius:var(--r-lg)">
+              <img src="assets/images/shisanyama/grilladin-promo.jpg"
+                   alt="Guests gathered around a braai at WISEINN Grilladin" loading="lazy">
+            </div>
+            <div class="hero__cta" style="margin-top:1.4rem">
+              <a class="btn-wi btn-wi--ember" href="shisanyama.html">View Menu &amp; Visit <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost" href="contact.html?service=shisanyama">Make an Enquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= ENQUIRY CTA ========================= -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div>
+            <p class="sec-eyebrow">Ready When You Are</p>
+            <h2 class="reveal" id="cta-title">Let's Build, Grow or Braai <span>Something Great.</span></h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              Tell us about your project, your garden or your next get-together —
+              we'll take it from there.
+            </p>
+            <div class="hero__cta reveal" style="--d:140ms">
+              <a class="btn-wi btn-wi--gold btn-wi--lg" href="contact.html">Start Your Enquiry <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost btn-wi--lg" data-whatsapp-link href="#" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <div class="cta-contact reveal" style="--d:180ms">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+            <!-- TODO: add confirmed physical address
+            <a href="shisanyama.html#visit"><svg aria-hidden="true"><use href="#i-pin"/></svg> Address to be confirmed</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= SHARED FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+          <p style="margin-top:1rem">
+            Transforming homes, outdoor spaces and commercial properties — and bringing
+            people together around the fire.
+          </p>
+          <div class="social-row">
+            <a class="social-btn" href="#" data-social="facebook" aria-label="WISEINN on Facebook (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-facebook"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="instagram" aria-label="WISEINN on Instagram (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="tiktok" aria-label="WISEINN on TikTok (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-tiktok"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Our divisions">
+          <h3>Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="landscaping.html">Wiseinn Landscaping &amp; Outdoor Design</a></li>
+            <li><a href="maintenance.html">SEEFAKO Projects and Design</a></li>
+            <li><a href="shisanyama.html">WISEINN Grilladin</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Quick links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About WISEINN</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="shisanyama.html">Menu &amp; Directions</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+            <!-- TODO: confirmed address
+            <span><svg aria-hidden="true"><use href="#i-pin"/></svg> Address pending confirmation</span> -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-legal">
+        <span>© <span class="js-year">2026</span> WISEINN. All rights reserved.</span>
+        <span>Personal information is handled responsibly in line with POPIA. <a href="about.html">Privacy notice coming soon.</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- ======================= END SHARED FOOTER ======================= -->
+
+  <!-- Floating WhatsApp button (href set safely by main.js from verified number) -->
+  <a class="wa-fab" href="#" data-whatsapp-link
+     aria-label="Contact WISEINN on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/swiper-bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

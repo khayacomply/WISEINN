@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- =====================================================================
+    SERVICES.HTML — overview of all three WISEINN divisions
+    Images used (styled fallbacks render automatically if missing):
+      assets/images/hero/services-hero.jpg
+      assets/images/landscaping/landscaping-feature.jpg
+      assets/images/maintenance/seefako-feature.jpg
+      assets/images/shisanyama/grilladin-feature.jpg
+    TODO: replace https://www.wiseinn.co.za with the real production domain.
+  ====================================================================== -->
+
+  <title>Our Services — Landscaping, SEEFAKO Projects &amp; Grilladin | WISEINN</title>
+  <meta name="description" content="Explore WISEINN's three divisions: Wiseinn Landscaping &amp; Outdoor Design, SEEFAKO Projects and Design, and WISEINN Grilladin — find the right team for your space.">
+  <link rel="canonical" href="https://www.wiseinn.co.za/services.html">
+  <meta name="theme-color" content="#101013">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WISEINN">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Our Services — Landscaping, SEEFAKO Projects & Grilladin | WISEINN">
+  <meta property="og:description" content="Three divisions, one standard: landscaping &amp; outdoor design, projects &amp; property care, and the WISEINN Grilladin braai experience.">
+  <meta property="og:url" content="https://www.wiseinn.co.za/services.html">
+  <meta property="og:image" content="https://www.wiseinn.co.za/assets/images/hero/wiseinn-share.jpg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Services — Landscaping, SEEFAKO Projects & Grilladin | WISEINN">
+  <meta name="twitter:description" content="Three divisions, one standard: landscaping, projects &amp; property care, and the WISEINN Grilladin braai experience.">
+  <meta name="twitter:image" content="https://www.wiseinn.co.za/assets/images/hero/wiseinn-share.jpg">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data: breadcrumbs + division list (no invented facts) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.wiseinn.co.za/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.wiseinn.co.za/services.html" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "WISEINN Divisions",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Wiseinn Landscaping & Outdoor Design", "url": "https://www.wiseinn.co.za/landscaping.html" },
+          { "@type": "ListItem", "position": 2, "name": "SEEFAKO Projects and Design", "url": "https://www.wiseinn.co.za/maintenance.html" },
+          { "@type": "ListItem", "position": 3, "name": "WISEINN Grilladin", "url": "https://www.wiseinn.co.za/shisanyama.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ Inline icon sprite (shared) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5.7s.8 2.6.8 4.7c0 2-1.4 3.6-3.4 3.6-2 0-3.6-1.6-3.6-3.6 0-.5.1-1.1.3-1.6C4.8 5.5 3 8.6 3 12.1 3 17 7 21 12 21s9-4 9-8.9C21 6.9 16.6 2.6 13.5.7zM12 19c-1.7 0-3-1.3-3-3 0-1.6 1-2.7 3-4 2 1.3 3 2.4 3 4 0 1.7-1.3 3-3 3z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.5.8 3.1 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm6.1 16.9c-.3.8-1.5 1.5-2.4 1.7-.6.1-1.4.2-4.1-.9-3.5-1.4-5.7-5-5.9-5.2-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.8z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.5-1.5h1.4V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.3c2.5 0 2.8 0 3.8.1 2.5.1 3.7 1.3 3.8 3.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.5-1.3 3.7-3.8 3.8-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.7-1.3-3.8-3.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.3 5.7 5.5 4.5 8 4.4c1-.1 1.3-.1 4-.1zM12 2C9.3 2 9 2 7.9 2.1 4.4 2.2 2.2 4.4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.5 2.3 5.7 5.8 5.8C9 22 9.3 22 12 22s3 0 4.1-.1c3.5-.1 5.7-2.3 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.5-2.3-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 4.9a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.3-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M19.6 7.2a5 5 0 0 1-3.6-1.6v7.9a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v2.9a2.8 2.8 0 1 0 1.9 2.7V2h2.8a5 5 0 0 0 3.6 4.3v2.9z"/></symbol>
+  </svg>
+
+  <!-- ========================= SHARED HEADER ========================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg nav-wi wrap" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="WISEINN home">
+        <!-- TODO: replace with assets/images/logos/wiseinn-logo.png when confirmed -->
+        <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-collapse" id="navMenu">
+        <ul class="navbar-nav ms-lg-4 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="landscaping.html">Landscaping</a></li>
+          <li class="nav-item"><a class="nav-link" href="maintenance.html">SEEFAKO Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="shisanyama.html">Grilladin</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn-wi btn-wi--gold btn-wi--sm nav-cta" href="contact.html">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+  <!-- ======================= END SHARED HEADER ======================= -->
+
+  <main id="main">
+
+    <!-- ========================= PAGE HERO ========================= -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__media" aria-hidden="true">
+        <!-- TODO: confirm filename; landscape/garden/projects montage works well here -->
+        <img src="assets/images/hero/services-hero.jpg" alt="" loading="eager"
+             onerror="this.hidden=true">
+      </div>
+      <div class="wrap">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb-wi">
+            <li><a href="index.html">Home</a></li>
+            <li class="sep" aria-hidden="true">/</li>
+            <li aria-current="page">Services</li>
+          </ol>
+        </nav>
+        <p class="sec-eyebrow acc-gold">Our Divisions</p>
+        <h1 class="sec-title reveal" id="page-title" style="font-size:var(--fs-hero); max-width:18ch">
+          Three Divisions. One Standard of Excellence.
+        </h1>
+        <p class="sec-lead reveal" style="--d:90ms">
+          WISEINN offers a comprehensive range of premium services designed to enhance,
+          transform and maintain both residential and commercial properties — and a fire
+          to gather around when the work is done.
+        </p>
+      </div>
+    </section>
+
+    <!-- Jump-to strip -->
+    <div class="anchor-strip" aria-label="Jump to a division">
+      <div class="wrap">
+        <a class="anchor-chip acc-green" href="#landscaping"><span class="dot" aria-hidden="true"></span> 01 · Landscaping</a>
+        <a class="anchor-chip acc-gold" href="#seefako"><span class="dot" aria-hidden="true"></span> 02 · SEEFAKO Projects</a>
+        <a class="anchor-chip acc-ember" href="#grilladin"><span class="dot" aria-hidden="true"></span> 03 · Grilladin</a>
+        <a class="anchor-chip" href="contact.html"><span class="dot" aria-hidden="true"></span> Get a Quote</a>
+      </div>
+    </div>
+
+    <!-- ========================= DIVISION ROWS ========================= -->
+    <section class="section" aria-label="Our three divisions">
+      <div class="wrap" style="display:grid; gap:var(--sec-pad)">
+
+        <!-- ===== Division 01 — Landscaping ===== -->
+        <article class="svc-row acc-green" id="landscaping" aria-labelledby="landscaping-title">
+          <div class="svc-row__body">
+            <div class="svc-row__head">
+              <span class="svc-row__num" aria-hidden="true">01</span>
+              <div>
+                <p class="svc-row__eyebrow">Wiseinn Landscaping &amp; Outdoor Design</p>
+                <h2 class="svc-row__title" id="landscaping-title">Outdoor Spaces, Elevated</h2>
+              </div>
+            </div>
+            <p class="svc-row__lead">
+              Tailored outdoor concepts that blend functionality, nature and aesthetics to
+              elevate any property.
+            </p>
+            <p>
+              We create and maintain beautiful outdoor spaces — from expert planting and full
+              garden makeovers to swimming pools, durable paving, irrigation and water storage
+              solutions. Whether it's a simple garden refresh or a complete outdoor
+              transformation, we handle every detail with care.
+            </p>
+            <ul class="svc-chips">
+              <li>Landscaping &amp; garden design</li>
+              <li>Gardening &amp; garden makeovers</li>
+              <li>New swimming pools</li>
+              <li>Pool cleaning &amp; maintenance</li>
+              <li>Paving — driveways, pathways &amp; patios</li>
+              <li>Irrigation systems</li>
+              <li>Plumbing</li>
+              <li>JoJo tank installation</li>
+              <li>Pergolas</li>
+              <li>Outdoor revamping</li>
+            </ul>
+            <div class="svc-row__cta">
+              <a class="btn-wi btn-wi--green" href="landscaping.html">Explore Landscaping <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost" href="contact.html?service=landscaping">Request a Quote</a>
+            </div>
+          </div>
+          <div class="svc-row__media reveal">
+            <div class="img-frame" data-fallback-label="Landscaping">
+              <img src="assets/images/landscaping/landscaping-feature.jpg"
+                   alt="Landscaped garden with lawn, planted beds and a paved pathway" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Division 02 — SEEFAKO Projects and Design ===== -->
+        <article class="svc-row svc-row--flip acc-gold" id="seefako" aria-labelledby="seefako-title">
+          <div class="svc-row__body">
+            <div class="svc-row__head">
+              <span class="svc-row__num" aria-hidden="true">02</span>
+              <div>
+                <p class="svc-row__eyebrow">SEEFAKO Projects and Design</p>
+                <h2 class="svc-row__title" id="seefako-title">Homes &amp; Businesses, Finished Properly</h2>
+              </div>
+            </div>
+            <p class="svc-row__lead">
+              We bring craftsmanship, precision and a refined aesthetic to every space we touch.
+            </p>
+            <p>
+              From refreshing outdated rooms to full alterations and refurbishments, SEEFAKO
+              transforms the inside and outside of your property into environments that feel
+              complete, polished and beautifully aligned with your vision — with construction
+              and structural expertise behind every finish.
+            </p>
+            <ul class="svc-chips">
+              <li>Interior &amp; exterior painting</li>
+              <li>Floor &amp; wall tiling</li>
+              <li>Refurbishment</li>
+              <li>Alterations &amp; building work</li>
+              <li>Ceilings &amp; drywall</li>
+              <li>Home improvement</li>
+              <li>Structural repairs</li>
+              <li>Masonry &amp; brickwork</li>
+              <li>Roofing &amp; structural framing</li>
+              <li>Geyser, leak &amp; drainage care</li>
+            </ul>
+            <div class="svc-row__cta">
+              <a class="btn-wi btn-wi--gold" href="maintenance.html">Explore SEEFAKO Projects <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost" href="contact.html?service=maintenance">Request a Quote</a>
+            </div>
+          </div>
+          <div class="svc-row__media reveal">
+            <div class="img-frame" data-fallback-label="SEEFAKO Projects">
+              <img src="assets/images/maintenance/seefako-feature.jpg"
+                   alt="Freshly painted interior room with new tiling and ceiling details" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Division 03 — WISEINN Grilladin ===== -->
+        <article class="svc-row acc-ember" id="grilladin" aria-labelledby="grilladin-title">
+          <div class="svc-row__body">
+            <div class="svc-row__head">
+              <span class="svc-row__num" aria-hidden="true">03</span>
+              <div>
+                <p class="svc-row__eyebrow">WISEINN Grilladin</p>
+                <h2 class="svc-row__title" id="grilladin-title">Braai. Food. Music. Good Company.</h2>
+              </div>
+            </div>
+            <span class="svc-row__badge">
+              <svg aria-hidden="true" style="width:1em;height:1em"><use href="#i-flame"/></svg> Opening This Friday
+            </span>
+            <p class="svc-row__lead" style="margin-top:1rem">
+              Our shisanyama destination — a welcoming space built around real fire, honest
+              food and the kind of atmosphere that keeps people at the table longer.
+            </p>
+            <p>
+              The Grilladin is where the WISEINN family gathers — and where you're invited.
+              Our full menu is being finalised and will be published on the Grilladin page
+              shortly.
+            </p>
+            <ul class="svc-chips">
+              <li>Real-fire shisanyama &amp; braai</li>
+              <li>Family-friendly dining</li>
+              <li>Music &amp; atmosphere</li>
+              <li>Menu — publishing soon</li>
+            </ul>
+            <div class="svc-row__cta">
+              <a class="btn-wi btn-wi--ember" href="shisanyama.html">Visit the Grilladin <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost" href="contact.html?service=shisanyama">Bookings &amp; Enquiries</a>
+            </div>
+          </div>
+          <div class="svc-row__media reveal">
+            <div class="img-frame" data-fallback-label="WISEINN Grilladin">
+              <img src="assets/images/shisanyama/grilladin-feature.jpg"
+                   alt="Flames rising over a braai grill at an outdoor dining venue" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================= QUOTE BAND ========================= -->
+    <figure class="quote-band">
+      <div class="wrap">
+        <blockquote class="reveal">
+          With Wiseinn &amp; Vistar, you receive more than a service. You receive
+          <strong>peace of mind</strong>, consistent quality, and a trusted partner dedicated
+          to transforming your property into something exceptional.
+        </blockquote>
+        <figcaption class="reveal" style="--d:120ms">The WISEINN Promise</figcaption>
+      </div>
+    </figure>
+
+    <!-- ========================= HOW WE DELIVER ========================= -->
+    <section class="section" aria-labelledby="process-title">
+      <div class="wrap">
+        <p class="sec-eyebrow">How We Deliver</p>
+        <h2 class="sec-title reveal" id="process-title">Professionalism at Every Step</h2>
+        <p class="sec-lead reveal" style="--d:80ms">
+          Every project — big or small — follows the same disciplined, client-centred approach.
+        </p>
+
+        <div class="steps" style="margin-top:2.5rem">
+          <div class="step acc-gold reveal">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3>Listen &amp; Plan</h3>
+            <p>We communicate openly and plan thoroughly, so your vision and our approach are aligned before work begins.</p>
+          </div>
+          <div class="step acc-green reveal" style="--d:90ms">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3>Craft &amp; Build</h3>
+            <p>Skilled artisans, technicians and project specialists execute with meticulous workmanship and modern techniques.</p>
+          </div>
+          <div class="step acc-gold reveal" style="--d:180ms">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3>On Time. On Budget.</h3>
+            <p>We work efficiently — ensuring your project is completed on schedule, within budget and above expectation.</p>
+          </div>
+          <div class="step acc-ember reveal" style="--d:270ms">
+            <span class="step__num" aria-hidden="true">4</span>
+            <h3>Built to Last</h3>
+            <p>We prioritise durability, sustainability and aesthetics — spaces that look stunning and stand the test of time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CTA BAND ========================= -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <div>
+            <p class="sec-eyebrow">Not Sure Where to Start?</p>
+            <h2 class="reveal" id="cta-title">Tell Us About Your Space. <span>We'll Take It From There.</span></h2>
+            <p class="sec-lead reveal" style="--d:80ms">
+              One call covers all three divisions — get honest advice on the right solution
+              for your property.
+            </p>
+            <div class="hero__cta reveal" style="--d:140ms">
+              <a class="btn-wi btn-wi--gold btn-wi--lg" href="contact.html">Start Your Enquiry <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn-wi btn-wi--ghost btn-wi--lg" data-whatsapp-link href="#" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <div class="cta-contact reveal" style="--d:180ms">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= SHARED FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="brand-word">WISEINN<small>One Vision · Three Ways</small></span>
+          <p style="margin-top:1rem">
+            Transforming homes, outdoor spaces and commercial properties — and bringing
+            people together around the fire.
+          </p>
+          <div class="social-row">
+            <a class="social-btn" href="#" data-social="facebook" aria-label="WISEINN on Facebook (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-facebook"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="instagram" aria-label="WISEINN on Instagram (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a class="social-btn" href="#" data-social="tiktok" aria-label="WISEINN on TikTok (page coming soon)">
+              <svg aria-hidden="true"><use href="#i-tiktok"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Our divisions">
+          <h3>Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="landscaping.html">Wiseinn Landscaping &amp; Outdoor Design</a></li>
+            <li><a href="maintenance.html">SEEFAKO Projects and Design</a></li>
+            <li><a href="shisanyama.html">WISEINN Grilladin</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Quick links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About WISEINN</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="shisanyama.html">Menu &amp; Directions</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+27799722549"><svg aria-hidden="true"><use href="#i-phone"/></svg> +27 79 972 2549</a>
+            <a href="mailto:wiseinntrading@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> wiseinntrading@gmail.com</a>
+            <!-- TODO: confirmed address -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-legal">
+        <span>© <span class="js-year">2026</span> WISEINN. All rights reserved.</span>
+        <span>Personal information is handled responsibly in line with POPIA. <a href="about.html">Privacy notice coming soon.</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- ======================= END SHARED FOOTER ======================= -->
+
+  <!-- Floating WhatsApp button (href set safely by main.js) -->
+  <a class="wa-fab" href="#" data-whatsapp-link aria-label="Contact WISEINN on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- Swiper & Lightbox intentionally not loaded — not needed on this page -->
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
